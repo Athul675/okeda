@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athul's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to bottom, #1a1a1a, #333);
+            color: #fff;
+        }
+
+        header {
+            background: #111;
+            text-align: center;
+            padding: 20px 0;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #00ff99;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00ccff;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #about, #skills, #projects, #contact {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #00ff99;
+        }
+
+        ul.skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        ul.skills-list li {
+            margin: 10px;
+            padding: 10px 20px;
+            background: #444;
+            border-radius: 20px;
+            list-style: none;
+            animation: zoomIn 1.2s ease;
+        }
+
+        .project {
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            margin: 0;
+            color: #00ccff;
+        }
+
+        .project a {
+            color: #00ff99;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #ff3399;
+        }
+
+        form input, form textarea, form button {
+            display: block;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 500px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        form button {
+            background: #00ff99;
+            color: #111;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: #00ccff;
+        }
+
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Athul's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Athul, a passionate developer with a love for coding and creating innovative solutions to real-world problems.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Weather App</h3>
+            <p>A web app that displays real-time weather updates for any location.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>My personal website showcasing skills and projects.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Athul. All rights reserved.</p>
+    </footer>
+</body>
+</html>
